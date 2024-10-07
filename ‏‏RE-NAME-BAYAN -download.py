@@ -63,7 +63,7 @@ def extract_invoice_number(pdf_path):
                 first_table = tables[0]  # استخدام أول جدول موجود
                 if first_table:
                     # التحقق من وجود أكثر من سطر في الجدول
-                    if len(first_table) > 1 و len(first_table[0]) > 0:
+                    if len(first_table) > 1 and len(first_table[0]) > 0:
                         # الحصول على محتوى الخلية أسفل الترويسة
                         invoice_number = first_table[1][0].strip()
                         print(f"محتوى الخلية أسفل الترويسة: {invoice_number}")
